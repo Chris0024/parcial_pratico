@@ -1,0 +1,41 @@
+{% extends "layout.html" %}
+{% block heading %}
+    Formulario
+{% endblock %}
+{% block body %}
+	
+	
+	
+	<form action="{{url_for('cv')}}" method="post">
+		<h3>Datos</h3>
+		<label for="fname">Primer nombre:</label><br>
+		<input type="text" name="name" placeholder="Ingresa tu nombre">
+		<br><br>
+		<label for="fadress">Apellido:</label><br>
+		<input type="text" name="ad" placeholder="Ingresa tu apellido">
+		<br><br>
+		<label for="fage">Edad:</label><br>
+		<input type="text" name="edad" placeholder="Ingresa tu edad">
+		<br><br>
+		<label for="fdescrip">Descripcion:</label><br>
+		<input type="text" name="dess" placeholder="escribe sobre ti">
+		<br><br>
+		<input type="checkbox" id="fem" name ="gen" value="Femenino">
+		<label for="fem">Femenino</label><br>
+		<input type="checkbox" id="mas" name ="gen" value="Masculino">
+		<label for="mas">Masculino</label><br>
+		<br>
+		<label for="mas">Estudios</label><br>
+		<input type="text" name="estudios" placeholder="ingresa estudios">
+		<br><br>
+		<label for="mas">Experiencia</label><br>
+		<input type="text" name="Exp" placeholder="ingresa Experiencia">
+		<br><br>
+		<label for="mas">Habilidades</label><br>
+		<input type="text" name="Hab" placeholder="ingresa Habilidades">
+		<br><br>
+        <button>Enviar</button>
+    </form>
+	
+	
+{% endblock %}

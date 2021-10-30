@@ -1,0 +1,64 @@
+{% extends "layout.html" %}
+{% block body %}
+<header>
+  <img src="esta-deberia-ser-mi-foto.png" id="foto" width="150" align="left">
+  <h2>Curriculum Vitae</h2>
+</header>
+
+<section>
+  <nav>
+  	<fieldset>
+  	<legend>Datos</legend>
+  	
+    <ul>
+      <li>Nombre : {{name}}</li>
+      <li>Apellido : {{ad}}</li>
+      <li>Edad : {{edad}}</li>
+      <li>Sexo : {{gen}}</li>
+
+    </ul>
+    </fieldset>
+  </nav>
+  
+  <article>
+    <fieldset>
+    	<legend>Descripcion propia</legend>
+    	<ul>{{dess}}
+    	<br><br>
+    	</ul>
+
+    </fieldset>
+
+  </article>
+</section>
+
+<footer>
+  <fieldset>
+  	<legend>Estudios</legend>
+  	<ul>
+  		<li>{{estudios}}</li>
+  		
+  	</ul>
+
+  </fieldset>
+  
+  <fieldset>
+  	<legend>Experiencia</legend>
+  	<ul>
+  		<li>{{exp}}</li>
+  	</ul>
+
+  </fieldset>
+   <fieldset>
+  	<legend>Habilidades</legend>
+  	<ul>
+  		<li>{{hab}}</li>
+  		
+
+  	</ul>
+
+  </fieldset>
+  
+</footer>
+
+{% endblock %}
