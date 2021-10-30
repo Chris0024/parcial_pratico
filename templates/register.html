@@ -3,7 +3,12 @@
     COMING ZOOM
 {% endblock %}
 {% block body %}
-   
-
+<form action="{{url_for('create')}}" method="post">
+    <label for="username">Username</label>
+    <input name="username" id="username" required>
+    <label for="password">Password</label>
+    <input type="password" name="password" id="password" required>
+    <button>Register</button>
+</form>
 
 {% endblock %}

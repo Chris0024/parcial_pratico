@@ -1,6 +1,8 @@
 from flask import Flask , render_template , request ,session
 import random
 
+from werkzeug.utils import redirect
+
 
 app = Flask(__name__)
 
@@ -9,7 +11,11 @@ app = Flask(__name__)
 def index():
 	return render_template("index.html")
 
-@app.route("/create/",methods=["POST"])
+@app.route("/login",methods=["POST"])
+def login():
+	return render_template("login.html")
+
+@app.route("/create/",methods=["GET","POST"])
 def create():
 	return render_template("create.html")
 

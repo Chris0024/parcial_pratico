@@ -9,16 +9,16 @@
 	<form action="{{url_for('cv')}}" method="post">
 		<h3>Datos</h3>
 		<label for="fname">Primer nombre:</label><br>
-		<input type="text" name="name" placeholder="Ingresa tu nombre">
+		<input type="text" name="name" placeholder="Ingresa tu nombre" required>
 		<br><br>
 		<label for="fadress">Apellido:</label><br>
-		<input type="text" name="ad" placeholder="Ingresa tu apellido">
+		<input type="text" name="ad" placeholder="Ingresa tu apellido" required>
 		<br><br>
 		<label for="fage">Edad:</label><br>
-		<input type="text" name="edad" placeholder="Ingresa tu edad">
+		<input type="text" name="edad" placeholder="Ingresa tu edad" required>
 		<br><br>
 		<label for="fdescrip">Descripcion:</label><br>
-		<input type="text" name="dess" placeholder="escribe sobre ti">
+		<input type="text" name="dess" placeholder="escribe sobre ti" required>
 		<br><br>
 		<input type="checkbox" id="fem" name ="gen" value="Femenino">
 		<label for="fem">Femenino</label><br>
@@ -26,13 +26,13 @@
 		<label for="mas">Masculino</label><br>
 		<br>
 		<label for="mas">Estudios</label><br>
-		<input type="text" name="estudios" placeholder="ingresa estudios">
+		<input type="text" name="estudios" placeholder="ingresa estudios" >
 		<br><br>
 		<label for="mas">Experiencia</label><br>
-		<input type="text" name="Exp" placeholder="ingresa Experiencia">
+		<input type="text" name="Exp" placeholder="ingresa Experiencia" >
 		<br><br>
 		<label for="mas">Habilidades</label><br>
-		<input type="text" name="Hab" placeholder="ingresa Habilidades">
+		<input type="text" name="Hab" placeholder="ingresa Habilidades" >
 		<br><br>
         <button>Enviar</button>
     </form>

@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+{% block heading %}
+    LOG IN
+{% endblock %}
+{% block body %}
+    
+    
+    <form action="{{url_for('create')}}" method="post">
+        <label class="clabel" for="username">Username</label>
+        <input name="username" id="username" required>
+        <label class="clabel" for="password">Password</label>
+        <input type="password" name="password" id="password" required>
+        <button>log in</button>
+    </form>
+
+
+{% endblock %}

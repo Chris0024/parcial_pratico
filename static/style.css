@@ -15,7 +15,11 @@ html {
     color: #377ba8;
     margin: 1rem 0;
   }
-  .content label {
+  
+  h1{
+      font-size: 60px;
+  }
+  .clabel {
     font-weight: bold;
     margin-bottom: 0.5em;
   }
@@ -66,3 +70,9 @@ html {
       border: solid 2px black;
   }
    
+  input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+  }
